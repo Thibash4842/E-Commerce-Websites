@@ -120,7 +120,7 @@ a p {
     width: 100%;
     color: white;
 }
-.navbar > a p:hover {
+.navbar .shopco a p:hover {
     color: white;
     cursor: pointer;
     border-radius: 5px;
