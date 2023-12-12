@@ -1,0 +1,138 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+main {
+    width: 100%;
+    min-height:100vh ;
+    background-image: url("./mandalas-1084082_1920.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+}
+article {
+    width: 500px;
+}
+article header {
+    display: flex;
+    background-color: rgb(75, 75, 75);
+}
+header button {
+    width: 50%;
+    padding:15px 10px;
+    background: none;
+    border: none;
+    outline: none;
+    color: gold;
+    font-weight: bolder;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+a button {
+    width: 100%;
+    padding:15px 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    width: 50%;
+}
+header button:hover {
+    background-color: gold;
+    color: white;
+}
+
+.sign {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+ h1 {
+    color: white;
+    margin: 5px 0px;
+    text-shadow: 2px 0px 4px gold;
+}
+.sign label {
+    color: white;
+    text-align: left;
+    display: block;
+}
+.sign input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border:1px solid white;
+    border-radius: 5px;
+    color: white;
+    outline-color: gold;
+}
+::placeholder {
+    color: gold;
+    opacity: 0.5;
+    
+}
+.sign .name {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+figure .country {
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+.mobile div {
+    display: flex;
+    justify-content: space-between;
+}
+.mobile input {
+    width: 80%;
+}
+.mobile .country {
+    padding: 10px 5px;
+    font-size: 18px;
+    background: none;
+    border:1px solid white;
+    background-color: gold;
+    color: white;
+    border-radius: 5px;
+}
+.sign button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    font-size: 18px;
+    border: 1px solid gold;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: gold;
+    transition-delay: 0.5s;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin: 20px 0px;
+
+}
+.sign button:hover {
+    background-color: gold;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (min-width:300px) and (max-width:500px) {
+    .name {
+        flex-direction: column;
+    }
+    .mobile .country {
+        padding:8px 5px;
+        font-size: 10px;
+    }
+ }
+

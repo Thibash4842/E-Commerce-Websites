@@ -1,0 +1,883 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.loop {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: load;
+    animation-delay: 2s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    z-index: 1000;
+}
+@keyframes load {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.load-container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bar {
+    width: 20px;
+    height: 80px;
+    background-color: deepskyblue;
+    animation-name: loading;
+    animation-duration:  1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-shadow: 2px 1px 4px black;
+}
+.bar1 {
+    animation-delay: .1s;
+}
+.bar2 {
+    animation-delay: 0.3s;
+}
+.bar3 {
+    animation-delay: 0.45s;
+}
+@keyframes loading {
+    0%,80%,100% {
+        height: 40px;
+        opacity: 0.7;
+    }
+    40% {
+        height: 80px;
+        opacity: 1;
+    }
+}
+
+.loader-container > h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* <-------- scrollbar style-------> */
+::-webkit-scrollbar {
+    width: 14px;
+  }
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+  }
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: dodgerblue;
+}
+
+/* <---------- anchar tag style ---------> */
+a {
+    text-decoration: none;
+    color: black;
+}
+a p {
+    padding: 5px 20px;
+    width: 100%;
+    color: white;
+}
+a p:hover {
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: skyblue;
+    box-shadow: 2px 2px 6px black;
+}
+span:hover a {
+    color: white;
+}
+/* <------------ logo style -------------> */
+.naving {
+    width: 100%;
+    min-height: 16vh;
+    position: relative;
+}
+.logo {
+    width: 100%;
+    background-color: black;
+    padding: 5pt 10pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+.logo img {
+    width: 250px;
+    
+}
+.logo div input {
+    width: 300px;
+    height: 34px;
+    padding: 8px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+.logo div input:hover {
+    outline: none;
+} 
+.logo div {
+    box-shadow: 0px 0px 10px white;
+    border: 2px solid white;
+    width: 350px;
+    height: 40px;
+}
+.logo div i {
+    cursor: pointer;
+    border-left: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 10px 12px;
+}
+.logo div i:hover {
+    background-color: white;
+    color: black;
+}
+.logo figure {
+    color: white;
+
+}
+.logo figure p {
+    font-size: 14px;
+}
+.logo figure h3 {
+    font-size: 14px;
+}
+a i {
+    color: black;
+}
+/* <---------- navbar style ------------> */
+.navbar img {
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    animation-name: image;
+    animation-duration: 6s;
+    animation-iteration-count:infinite; 
+    
+}
+
+@keyframes image {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+/* <--------------- navbar ---------> */
+.shopy {
+    position: relative;
+}
+.navbar div .shopco {
+    display: none;
+    width: 200px;
+    transition: all 2s;
+    position: absolute;
+    padding: 10px;
+    left: 3px;
+    top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.navbar .shopy:hover .shopco {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.shopy1 {
+    position: relative;
+}
+.navbar div .shopco1 {
+    display: none;
+    font-size: 14px;
+    width: 200px;
+    transition: all 2s;
+    position: absolute;
+    padding: 10px;
+    top: 30px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.shopco1 p {
+    padding: 5px;
+}
+.shopco1 p:hover {
+    background-color: silver;
+    color:blue;
+}
+.shopco1 p i {
+    background: none;
+}
+.shopco1 p .fa-regular {
+    font-size:18px ;
+}
+.navbar .shopy1:hover .shopco1 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.cus {
+    border-bottom: 1px solid white;
+}
+select:hover{
+    color: white;
+}
+
+select {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    shape-outside: none;
+}
+.navbar .shopy:hover > select {
+    transform: rotatex(180deg);
+    color: white;
+
+}
+
+.navbar {
+    position: fixed;
+    z-index: 999;
+    top: 50px;
+    width: 100%;
+    height: 45px;
+    padding: 3px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,rgb(24, 24, 24),white) ;
+}
+.navbar div {
+    float: right;
+    transition: all 2s;
+    animation-name: nav;
+    animation-duration: 2s;
+}
+@keyframes nav {
+    from {
+        transform: translatey(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translatey(0px);
+    }
+}
+
+.navbar span {
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 16px;
+    margin-right:10px ;
+    padding: 5px 20px;
+    font-weight:800;
+}
+
+.navbar span:hover {
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: skyblue;
+    box-shadow: 2px 2px 6px black;
+}
+.navbar section {
+    display: inline;
+}
+.navbar section button {
+    cursor: pointer;
+    width: 100px;
+    padding:8px 6px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: dodgerblue;
+    border: 1px solid black;
+    margin-right:20px ;
+
+}
+.navbar section button:hover {
+    box-shadow: 0px 0px 4px black;
+    background-color: skyblue;
+    color: white;
+
+}
+.navbar .fa-user {
+    background: none;
+    font-size:12px ;
+}
+
+/* .fa-cart-shopping:hover span {
+    display: block;
+} */
+.navbar .fa-heart, .fa-cart-shopping {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    background: none;
+}
+.navbar .fa-cart-shopping:hover, .fa-heart:hover {
+    background-color: black;
+    box-shadow: 0px 0px 4px rgb(118, 100, 100);
+    color: white;
+    border-radius: 50%;
+}
+.navbar label i {
+    padding: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.navbar input, .navbar .fa-bars {
+    display: none;
+}
+.navbar>input:checked~div {
+    /* background-color: skyblue; */
+    left: 0%;
+
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+    .naving {
+        min-height: 31vh;
+    }
+    .logo {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .logo img {
+        width: 180px;
+    }
+    .logo div input {
+        width: 170px;
+        height: 34px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .logo div {
+        border: 2px solid white;
+        width: 220px;
+        height: 37px;
+    }
+    .logo div i {
+        color: white;
+        border-left: 2px solid white;
+        font-size: 14px;
+        height: 34px;
+        width: 41.9px;
+        padding: 10px 14px;
+    }
+    .navbar {
+        top: 120px;
+    }
+    .navbar div {
+        width: 80%;
+        height: 90vh;
+        padding: 20px;
+        position: fixed;
+        background-color:rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        top: 165px;
+        flex-direction: column;
+        left: -100%;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+    }
+    .navbar .fa-bars {
+        display: block;
+    }
+    .navbar {
+        padding: 5px;
+    }
+    .navbar div .shopco {
+        right: 0;
+        left: 60px;
+        
+    }
+    .slideshow-container .navigation {
+        left: 10px;
+    }
+    
+    
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .naving {
+        height: 18vh;
+    }
+    .logo img {
+        width: 200px;
+    }
+    .logo div input {
+        width: 170px;
+        height: 34px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .logo div {
+        border: 2px solid white;
+        width: 221px;
+        height: 37px;
+    }
+    .logo div i {
+        color: white;
+        border-left: 2px solid white;
+        font-size: 14px;
+        padding: 9px 13px;
+    }
+    .navbar div {
+        width: 50%;
+        height: 90vh;
+        position: fixed;
+        background-color:rgba(0, 0, 0, 0.5);
+        display: flex;
+        color: white;
+        top: 95px;
+        flex-direction: column;
+        left: -100%;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+    }
+    .navbar .fa-bars {
+        display: block;
+    }
+    .navbar {
+        padding: 5px;
+    }
+    .navbar div .shopco {
+        right: 0;
+        left: 60px;
+        
+    }
+}
+.navbar div .shopco1 {
+    left: 10px;
+}
+
+/* <--------- home style -----------> */
+.home-container {
+    width: 100%;
+    height: 40vh;
+}
+.home img {
+    width: 100%;
+    height: 40vh;
+}
+    /* <------- slideshow -------> */
+.slide-container {
+    width: 100%;
+    top: 40px;  
+    min-height: 100vh;
+}
+
+.slideshow-container {
+    min-width: 100%;
+    position: relative;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+}
+.slide {
+    width: 100%;
+    height: 350px;
+    display: none;
+    box-shadow: 0px 0px 8px 4px black;
+
+}
+.slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    /* box-shadow: 0px 0px 8px 4px black; */
+}
+.slideshow-container input {
+    display: none;
+}
+.slideshow-container label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 4px black;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slideshow-container label:hover {
+    background-color: gray;
+}
+.navigation {
+    background-color: none;
+}
+#slide1:checked ~ #slide1, #slide2:checked ~ #slide2,
+ #slide3:checked ~ #slide3, #slide4:checked ~ #slide4,
+  #slide5:checked ~ #slide5 {
+    display: block;
+}
+.slideshow-container .navigation {
+    position: absolute;
+    z-index: 22;
+    top: 310px;
+    left: auto;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* <-------- shoping style -------> */
+.shoping {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: cursive;
+}
+.shoping div {
+    width: 150px;
+    height: 150px;
+    /* background-color: silver; */
+    text-align: center;
+}
+.shoping div:hover {
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+}
+.shoping div img {
+    width: 100px;
+    height: 100px;
+}
+.shoping div:hover img {
+    transform: scale(1.5);
+}
+.shoping div p {
+    padding: 10px 0px;
+    color: black;
+    text-align: center  ;
+    font-size: 20px;
+}
+.shopnow {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-decoration-line:underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* <-------------- offer page style -----------> */
+
+.offer-container {
+    width: 100%;
+    min-height: 75vh;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    justify-content: space-between;
+}
+.offer-container .pay,.discount {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 6px 1px black;
+    padding: 20px;
+}
+@media screen and (min-width:300px) and (max-width:500px) {
+    .offer-container {
+        padding: 10px;
+    }
+}
+.offer-container div {
+    text-align: center;
+}
+.offer-container i {
+    font-size: 70px;
+    background-color: gold;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.offer-container p {
+    font-size: 20px;
+    padding: 10px 0px;
+    text-shadow: 1px 0px gold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.offer-container .dollar {
+    padding: 20px 28px;
+}
+.offer-container .fa-qrcode {
+    padding: 20px 25px;
+}
+.discount {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.discount section {
+    text-align: center;
+}
+.discount figure {
+    background-image:radial-gradient(white 5%,gold 95%) ;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 20px 15px;
+}
+.discount h1:first-child {
+    background-color: black;
+    color: white;
+    padding:0px 5px;
+    transform: rotate(-5deg);
+    margin: 5px;
+}
+.discount h1:last-child {
+    font-size: 40px;
+}
+.discount sup {
+    font-size: 18px;
+}
+/* <------- services ----------> */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: silver;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px black;
+}
+.services section {
+    width: 200px;
+    height: 100px;
+}
+.services i {
+    font-size: 50px;
+    color:dodgerblue;
+    cursor: pointer;
+}
+.services section:hover > i  {
+    color: white;
+}
+.services p {
+    font-size: 20px;
+}
+/* <--------- card-container -------> */
+.card-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card-container img {
+    width: 100px;
+    height: 100px;
+    transition: 0.5;
+}
+.card-container img:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.card-container section h2 {
+    text-align: center;
+    padding: 5px 0px;
+}
+.card-container section {
+    width: 300px;
+    min-height: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 2px black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-container aside {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card-container section span {
+    display: inline-block;
+    padding: 5px 0px;
+    color: deepskyblue;
+    cursor: pointer;
+}
+.card-container section span:hover {
+    color: chocolate;
+}
+/* <---------------- sale-container- ------> */
+.sale-container {
+    width: 100%;
+    height: 40vh;
+}
+.sale-container img {
+    width: 100%;
+    height: 40vh;
+    padding: 10px 0px;
+}
+/* <------------- cloth-container ------> */
+.cloth-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+.cloth-container .shirt, aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cloth-container article {
+    margin: 10px 0px;
+}
+
+.cloth-container div {
+    text-align: center;
+    box-shadow: 0px 0px 2px 1px black;
+    width: 220px;
+    padding: 10px;
+}
+.cloth-container img {
+    width: 200px;
+    height: 200px;
+}
+.cloth-container img:hover {
+    transform: translatey(-10px);
+}
+.cloth-container p {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.cloth-container span {
+    color: dodgerblue;
+    font-size: 24px;
+}
+.cloth-container span:hover {
+    color: chocolate;
+    cursor: pointer;
+}
+/* <----------- project-details----------> */
+@media screen and (min-width:300px) and (max-width:630px) {
+    .project hr {
+        display: none;
+    }
+    .cloth-container .shirt, aside {
+        flex-direction: column;
+    }
+
+}
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+.details p:hover, h1:hover {
+    color: deepskyblue;
+}
+.details .image {
+    background-color: black;
+    text-align: center;
+}
+.details .logoo {
+    background-color: black;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    padding: 5px;
+}
+
+.my-profile {
+    background-color: black;
+    width: 100%;
+
+}
+.my-profile img {
+    width: 200px;
+}
+.my-profile section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+}
+.my-profile div {
+    width: 250px;
+    padding: 20px;
+}
+.my-profile h3 {
+    padding: 15px 0px;
+    display: block;
+}
+.my-profile p {
+    color: rgb(130, 122, 122);
+}
+.my-profile figure i {
+    font-size: 15px;
+    background-color: deepskyblue;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.project section img {
+    width: 200px;
+    height: 80px;
+    margin-top: 10px;
+}

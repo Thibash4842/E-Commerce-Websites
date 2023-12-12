@@ -1,0 +1,207 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* <------------ logo style -------------> */
+.naving {
+    width: 100%;
+    min-height:100vh ;
+    background-image: url("./banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 100%;
+    background-color: black;
+    padding: 5pt 10pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0%;
+}
+.logo img {
+    width: 250px;
+    
+}
+.logo div input {
+    width: 300px;
+    height: 34px;
+    padding: 8px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+.logo div input:hover {
+    outline: none;
+} 
+.logo div {
+    box-shadow: 0px 0px 10px white;
+    border: 2px solid white;
+    width: 350px;
+    height: 40px;
+}
+.logo div i {
+    cursor: pointer;
+    border-left: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 10px 12px;
+}
+.logo div i:hover {
+    background-color: white;
+    color: black;
+}
+.logo figure {
+    color: white;
+
+}
+.logo figure p {
+    font-size: 14px;
+}
+.logo figure h3 {
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    width: 200px;
+}
+a h2 {
+    color: black;
+}
+@media screen and (min-width:300px) and (max-width:600px) {
+    .naving {
+        min-height: 31vh;
+    }
+    .logo {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .logo img {
+        width: 180px;
+    }
+    .logo div input {
+        width: 170px;
+        height: 34px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .logo div {
+        border: 2px solid white;
+        width: 220px;
+        height: 37px;
+    }
+    .logo div i {
+        color: white;
+        border-left: 2px solid white;
+        font-size: 14px;
+        height: 34px;
+        width: 41.9px;
+        padding: 10px 14px;
+    }
+    .naving {
+        height: 125vh;
+    }
+    .naving .container {
+        width: 98%;
+    }
+    .container header h2 {
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+    a {
+        width: 100px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:900px) {
+    .naving {
+        height: 8vh;
+    }
+    .logo img {
+        width: 200px;
+    }
+    .logo div input {
+        width: 170px;
+        height: 34px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .logo div {
+        border: 2px solid white;
+        width: 221px;
+        height: 37px;
+    }
+    .logo div i {
+        color: white;
+        border-left: 2px solid white;
+        font-size: 14px;
+        padding: 9px 13px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1050px) {
+    .container {
+        margin-top: 5%;
+    }
+}
+/* <-------- container style -------------> */
+
+.container {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.container header {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+}
+header h2 {
+    padding:15px 50px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-bottom: 4px solid white;
+}
+header h2:hover {
+    color: deepskyblue;
+    border-bottom: 4px solid deepskyblue;
+}
+.container section {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+.container section img {
+    width: 280px;
+    height: 200px;
+}
+.container section .item {
+    font-size: 22px;
+    padding: 10px 0px;
+}.container section .item + p {
+    font-size: 16px;
+}
+.container section button {
+    margin-top: 10px;
+    color: white;
+    border: none;
+    font-weight:bold;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: chocolate;
+}
+.container section button:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}

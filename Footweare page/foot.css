@@ -1,0 +1,736 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* <-------- scrollbar style-------> */
+::-webkit-scrollbar {
+    width: 14px;
+  }
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+  }
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: dodgerblue;
+}
+
+/* <---------- anchar tag style ---------> */
+a {
+    text-decoration: none;
+    color: black;
+}
+a p {
+    width: 100%;
+    color: white;
+    padding: 5px 20px;
+}
+a p:hover {
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: skyblue;
+    box-shadow: 2px 2px 6px black;
+}
+a i {
+    color: black;
+}
+span:hover i {
+    color: white;
+}
+/* <------------ logo style -------------> */
+.naving {
+    width: 100%;
+    min-height: 16vh;
+    position: relative;
+}
+.logo {
+    width: 100%;
+    background-color: black;
+    padding: 5pt 10pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+.logo img {
+    width: 250px;
+    
+}
+.logo div input {
+    width: 300px;
+    height: 34px;
+    padding: 8px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+.logo div input:hover {
+    outline: none;
+} 
+.logo div {
+    box-shadow: 0px 0px 10px white;
+    border: 2px solid white;
+    width: 350px;
+    height: 40px;
+}
+.logo div i {
+    cursor: pointer;
+    border-left: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 10px 12px;
+}
+.logo div i:hover {
+    background-color: white;
+    color: black;
+}
+.logo figure {
+    color: white;
+
+}
+.logo figure p {
+    font-size: 14px;
+}
+.logo figure h3 {
+    font-size: 14px;
+}
+
+/* <---------- navbar style ------------> */
+.navbar .home > a {
+    color: black;
+}
+.navbar .home:hover > a {
+    color: white;
+}
+.navbar img {
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    animation-name: image;
+    animation-duration: 4s;
+    animation-iteration-count:infinite; 
+}
+@keyframes image {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+/* <--------------- navbar ---------> */
+.shopy {
+    position: relative;
+}
+.navbar div .shopco {
+    display: none;
+    width: 200px;
+    transition: all 2s;
+    position: absolute;
+    padding: 10px;
+    left: 3px;
+    top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.navbar .shopy:hover .shopco {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.shopy1 {
+    position: relative;
+}
+.navbar div .shopco1 {
+    display: none;
+    font-size: 14px;
+    width: 200px;
+    transition: all 2s;
+    position: absolute;
+    padding: 10px;
+    top: 30px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.shopco1 p {
+    padding: 5px;
+}
+.shopco1 p:hover {
+    background-color: silver;
+    color:blue;
+}
+.shopco1 p i {
+    background: none;
+}
+.shopco1 p .fa-regular {
+    font-size:18px ;
+}
+.navbar .shopy1:hover .shopco1 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.cus {
+    border-bottom: 1px solid white;
+}
+select:hover{
+    color: white;
+}
+
+select {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    shape-outside: none;
+}
+.navbar .shopy:hover > select {
+    transform: rotatex(180deg);
+    color: white;
+
+}
+
+.navbar {
+    position: fixed;
+    z-index: 999;
+    top: 50px;
+    width: 100%;
+    height: 45px;
+    padding: 3px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,rgb(24, 24, 24),white) ;
+}
+.navbar div {
+    float: right;
+    transition: all 2s;
+    animation-name: nav;
+    animation-duration: 2s;
+}
+@keyframes nav {
+    from {
+        transform: translatey(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translatey(0px);
+    }
+}
+
+.navbar span {
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 16px;
+    margin-right:10px ;
+    padding: 5px 20px;
+    font-weight:800;
+}
+
+.navbar span:hover {
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: skyblue;
+    box-shadow: 2px 2px 6px black;
+}
+.navbar section {
+    display: inline;
+}
+.navbar section button {
+    cursor: pointer;
+    width: 100px;
+    padding:8px 6px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: dodgerblue;
+    border: 1px solid black;
+    margin-right:20px ;
+
+}
+.navbar section button:hover {
+    box-shadow: 0px 0px 4px black;
+    background-color: skyblue;
+    color: white;
+
+}
+.navbar .fa-user {
+    background: none;
+    font-size:12px ;
+}
+
+/* .fa-cart-shopping:hover span {
+    display: block;
+} */
+.navbar .fa-heart, .fa-cart-shopping {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    background: none;
+}
+.navbar .sh-sh:hover, .he-ha:hover {
+    background-color: black;
+    box-shadow: 0px 0px 4px rgb(118, 100, 100);
+    color: white;
+    border-radius: 50%;
+}
+.navbar label i {
+    padding: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.navbar input, .navbar .fa-bars {
+    display: none;
+}
+.navbar>input:checked~div {
+    /* background-color: skyblue; */
+    left: 0%;
+
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+    .naving {
+        min-height: 31vh;
+    }
+    .logo {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .logo img {
+        width: 180px;
+    }
+    .logo div input {
+        width: 170px;
+        height: 34px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .logo div {
+        border: 2px solid white;
+        width: 220px;
+        height: 37px;
+    }
+    .logo div i {
+        color: white;
+        border-left: 2px solid white;
+        font-size: 14px;
+        height: 34px;
+        width: 41.9px;
+        padding: 10px 14px;
+    }
+    .navbar {
+        top: 120px;
+    }
+    .navbar div {
+        width: 100%;
+        height: 90vh;
+        padding: 20px;
+        position: fixed;
+        background-color:white;
+        color: black;
+        display: flex;
+        top: 165px;
+        flex-direction: column;
+        left: -100%;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+    }
+    .navbar .fa-bars {
+        display: block;
+    }
+    .navbar {
+        padding: 5px;
+    }
+    .navbar div .shopco {
+        right: 0;
+        left: 30px;
+        z-index: 10;
+    }
+    .slideshow-container .navigation {
+        left: 10px;
+    }
+    
+    
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .naving {
+        height: 18vh;
+    }
+    .logo img {
+        width: 200px;
+    }
+    .logo div input {
+        width: 170px;
+        height: 34px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .logo div {
+        border: 2px solid white;
+        width: 221px;
+        height: 37px;
+    }
+    .logo div i {
+        color: white;
+        border-left: 2px solid white;
+        font-size: 14px;
+        padding: 9px 13px;
+    }
+    .navbar div {
+        width: 50%;
+        height: 90vh;
+        position: fixed;
+        background-color:white;
+        display: flex;
+        color: black;
+        top: 95px;
+        flex-direction: column;
+        left: -100%;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    .navbar .fa-bars {
+        display: block;
+    }
+    .navbar {
+        padding: 5px;
+    }
+    .navbar div .shopco {
+        right: 0;
+        left: 60px;
+        z-index: 10;
+    }
+}
+.navbar div .shopco1 {
+    left: 10px;
+}
+
+/* <--------- home style -----------> */
+.home-container {
+    width: 100%;
+    height: 40vh;
+}
+.home img {
+    width: 100%;
+    height: 40vh;
+}
+    /* <------- slideshow -------> */
+.container {
+    width: 100%;
+    top: 40px;  
+    min-height: 50vh;
+}
+
+.slideshow-container {
+    min-width: 100%;
+    position: relative;
+    margin: auto;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+}
+.slide {
+    width: 100%;
+    height: 350px;
+    display: none;
+    box-shadow: 0px 0px 8px 4px black;
+
+}
+.slideshow-container img {
+    width: 100%;
+    height: 350px;
+    object-position: center;
+    box-shadow: 0px 0px 8px 4px black;
+}
+.slideshow-container input {
+    display: none;
+}
+.slideshow-container label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 4px black;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slideshow-container label:hover {
+    background-color: gray;
+}
+.navigation {
+    background-color: none;
+}
+#slide1:checked ~ #slide1, #slide2:checked ~ #slide2,
+ #slide3:checked ~ #slide3, #slide4:checked ~ #slide4,
+  #slide5:checked ~ #slide5 {
+    display: block;
+}
+.slideshow-container .navigation {
+    position: absolute;
+    z-index: 22;
+    top: 310px;
+    left: auto;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* <-------------- card container------------> */
+.card-container {
+    width: 100%;
+    min-height: 50vh;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card-container img {
+    width: 100px;
+    height: 100px;
+    transition: 0.5;
+}
+.card-container img:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.card-container section h2 {
+    text-align: center;
+    padding: 5px 0px;
+}
+.card-container section {
+    width: 300px;
+    min-height: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 2px black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-container aside {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card-container section span {
+    display: inline-block;
+    padding: 5px 0px;
+    color: deepskyblue;
+    cursor: pointer;
+}
+.card-container section span:hover {
+    color: chocolate;
+}
+/* <---------------- sale-container- ------> */
+.sale-container {
+    width: 100%;
+    height: 50vh;
+}
+.sale-container img {
+    width: 100%;
+    height: 50vh;
+    padding: 10px 0px;
+}
+/* <------------- cloth-container ------> */
+.cloth-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+.cloth-container .shirt, aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cloth-container article {
+    margin: 10px 0px;
+}
+
+.cloth-container div {
+    text-align: center;
+    width: 220px;
+    padding: 10px;
+}
+.cloth-container div:hover {
+    box-shadow: 0px 0px 2px 1px black;
+}
+.cloth-container div:hover > figcaption {
+    transform: translateY(-10px);
+}
+.cloth-container div:hover > figcaption h3 {
+    color:deepskyblue;
+}
+
+.cloth-container figure {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.cloth-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.cloth-container figure .tk,.tt  {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 10px;
+    opacity: 0.5;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+.cloth-container figure small {
+    position: absolute;
+    z-index: 2;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    padding: 2px;
+}
+.cloth-container figure small:hover {
+    background: none;
+    border: 2px solid green;
+    background-color: white;
+    color: green;
+}
+.cloth-container figure .tt  {
+    top: 40px;
+}
+.cloth-container .tk:hover {
+    color: red;
+    text-shadow: 0px 0px 8px black;
+}
+.cloth-container .tt:hover {
+    color: green;
+    text-shadow: 0px 0px 8px black;
+}
+.cloth-container .more {
+    color: dodgerblue;
+    font-size: 24px;
+}
+.cloth-container .more:hover {
+    color: chocolate;
+    cursor: pointer;
+}
+.cloth-container figcaption {
+    background-color: white;
+    text-align: left;
+    display: grid;
+    gap: 5px;
+}
+.cloth-container figcaption del,h4 {
+    opacity: 0.7;
+}
+.cloth-container figcaption p:first-child {
+    opacity: 0.7;
+}
+.cloth-container figcaption p ~ p {
+    display: flex;
+    gap: 10px;
+}
+.cloth-container figcaption strong {
+    color: green;
+}
+/* <----------- project-details----------> */
+@media screen and (min-width:300px) and (max-width:630px) {
+    .project hr {
+        display: none;
+    }
+    .cloth-container .shirt, aside {
+        flex-direction: column;
+    }
+
+}
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+.details p:hover, h1:hover {
+    color: deepskyblue;
+}
+.details .image {
+    background-color: black;
+    text-align: center;
+}
+.details .logoo {
+    background-color: black;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    padding: 5px;
+}
+
+.my-profile {
+    background-color: black;
+    width: 100%;
+
+}
+.my-profile img {
+    width: 200px;
+}
+.my-profile section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+}
+.my-profile div {
+    width: 250px;
+    padding: 20px;
+}
+.my-profile h3 {
+    padding: 15px 0px;
+    display: block;
+}
+.my-profile p {
+    color: rgb(130, 122, 122);
+}
+.my-profile figure i {
+    font-size: 15px;
+    background-color: deepskyblue;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.project section img {
+    width: 200px;
+    height: 80px;
+    margin-top: 10px;
+}
